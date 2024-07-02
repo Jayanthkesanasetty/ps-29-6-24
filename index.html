@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center><h1>TASK ON 29-6-24</h1></center> <hr>
+    <pre style=" font-size: larger;">
+        1.Enter no of Rows: 5
+        a 
+        a B 
+        a B c 
+        a B c D 
+        a B c D e 
+
+        code:
+        a=+prompt("Enter no of Rows: ")
+        low=97
+        upp=66
+        s=""
+        for(i=1;i<=a;i++){
+            for(j=1;j>0;j--){
+                if(i%2==1){
+                    s=s+String.fromCharCode(low)+" "
+                    low+=2
+                }
+                else{
+                    s=s+String.fromCharCode(upp)+" "
+                    upp+=2
+                }
+            }
+            console.log(s)
+        }
+        
+        output:
+        a 
+        a B 
+        a B c 
+        a B c D 
+        a B c D e 
+
+        2.Enter no of Rows: 5
+        A 
+        b C 
+        d E f 
+        G h I j 
+        K l M n O 
+
+        code: 
+
+        a=+prompt("Enter no of Rows: ")
+        low=98
+        upp=65
+        val=1
+        for(i=1;i<=a;i++){
+        s=""
+            for(j=i;j>0;j--){
+                if(val%2==1){
+                    s=s+String.fromCharCode(upp)+" "
+                    upp+=2
+                }
+                else{
+                    s=s+String.fromCharCode(low)+" "
+                low+=2
+                }
+                val++
+            }
+            console.log(s)
+        }
+
+        output:
+        A 
+        b C 
+        d E f 
+        G h I j 
+        K l M n O 
+
+    </pre>
+</body>
+</html>
